@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    font-family: "Roboto Condensed", sans-serif;
+}
+img{
+    max-width:100%;
+    height:auto;
+    margin: auto;
+    display:block;
+}
+.navbar .container .sidebar .offcanvas-body .navbar-nav .nav-item .nav-link{
+    color:#f77c02;
+    position:relative;
+}
+.navbar .container .sidebar .offcanvas-body .navbar-nav .nav-item .nav-link::after{
+    content:"";
+    background-color: #f77c02;
+    width:0;
+    height:2px;
+    position:absolute;
+    bottom:10px;
+    left:5px;
+    transition:0.5s;
+}
+.navbar .container .sidebar .offcanvas-body .navbar-nav .nav-item .nav-link:hover::after{
+    width:85%;
+}
+.cart-icon{
+    position: relative;
+}
+.cart-icon .cart-value{
+    position:absolute;
+    top:40%;
+    right:15px;
+}
+main{
+    padding-top: 80px;
+    text-align: center;
+}
+.container1{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px #f77c02;
+    width: 95%;
+    margin-left: 2%;
+    margin-top: 5%;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    margin-bottom: 3%;
+}
+.container1 h2{
+    margin-bottom: 20px;
+    color: #f77c02;
+    font-size: 40px;
+}
+.form_parts{
+    margin-bottom: 15px;
+    text-align: left;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color:#f77c02;
+    font-size:20px;
+}
+.inputs {
+    width:100%;
+    padding: 10px;
+    border: 1px solid #f77c02;
+    border-radius: 4px;
+    font-size: 16px;
+    outline:none;
+    margin-bottom: 10px;
+}
+.inputs:focus{
+    border:1px solid #f77c02 ;
+box-shadow: 1px 1px 20px 1px #f77d028f ;
+}
+.container1 .row button {
+    background-color: #f77c02;
+    color: white;
+    font-weight: bold;
+    padding: 10px ;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width:100%;
+}
+.container1 button:hover {
+    background-color: #c56301;
+}
+footer {
+    position:relative;
+}
+footer .info li a {
+    border-radius: 50%;
+    background-color:rgb(84, 101, 120);
+    color:white;
+}
+footer .info li :hover{
+        color:black;
+        background-color: #f77c02;
+}
+footer .copyright  ::after{
+    content:"";
+    background-color:rgba(84, 101, 120, 0.704);
+    height:1px;
+    position:absolute;
+    bottom:80px;
+    left:0px;
+    width:100%;
+}

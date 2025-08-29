@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products Page</title>
+  <link rel="stylesheet" href="home_style.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="Products_Style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-black shadow fixed-top w-100 " style="min-height:5vh;">
+  <div class="container ">
+    <a class="navbar-brand fs-1 fw-bold" href="#"  style="color:#f77c02 ;">Foodie</a>
+    <button class="navbar-toggler  border-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon  rounded-1" style="background-color:#f77c02; " ></span>
+    </button>
+    <div class="sidebar offcanvas offcanvas-start bg-black" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header shadow">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel " style="color:#f77c02;">Foodie</h5>
+        <button type="button" class="btn-close  fw-bold" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color:#f77c02;"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column flex-lg-row  p-4 p-lg-0">
+        <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+          <li class="nav-item mx-2">
+            <a class="nav-link active fw-bold" aria-current="page" href="home.html" style="color:#f77c02;">Home</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link fw-bold" href="Products.html" style="color:#f77c02;">Products</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link fw-bold" href="About.html" style="color:#f77c02;">About</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link fw-bold" href="Add_product.html" style="color:#f77c02;">Add product</a>
+          </li>
+          </ul>
+        <div >
+          <a href="Cart.html" class="cart-icon   text-decoration-none " > <i class="fa-solid fa-bag-shopping m-3 fs-4 text-white" ></i>
+        <span id="cart-value"class="cart-value text-center text-black " style="background-color: #f77c02;border-radius:50%; width:20px; height:22px; ">0</span></a>
+          <button id="logoutButton" class="btn btn-danger ms-5 rounded-5 shadow" type="submit" >Logout <i class="fa-solid fa-right-from-bracket"></i></button>
+        </div>
+    </div>
+  </div>
+</nav>
+</header>
+<main>
+    <section>
+      <h1 class="text-center">🍔 Fast Food Menu</h1>
+      <div class="menu" id="menuContainer"></div>
+    </section>
+</main>
+<footer class="bg-black">
+    <div class="container pt-4 pb-4 text-white-50 text-center text-md-start">
+      <div class="row">
+      <div class=" col-md-6 col-lg-4 ">
+        <div class="info ">
+          <h1  class="mb-4" style="color:#f77c02;">Foodie</h1>
+          <p class="mb-5 text-secondary">
+            We have delicious food with best services and fast delivery.
+            We have special menu doesn't exist anywhere.   </p>
+          <ul class="d-flex mt-5 list-unstyled justify-content-evenly">
+            <li>
+              <a href="#" class="d-block text-light ">
+                <i class="fa-brands fa-facebook fa-lg  rounded-circle p-2 me-2 mt-2 mb-2"></i>
+              </a>
+            </li>
+            <li>
+            <a href="#" class="d-block text-light">
+              <i class="fa-brands fa-x-twitter fa-lg rounded-circle p-2 me-2 mt-2 mb-2 "></i>
+            </a>
+            </li>
+            <li>
+              <a href="#" class="d-block text-light">
+                <i class="fa-brands fa-linkedin fa-lg  rounded-circle p-2 me-2 mt-2 mb-2"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="d-block text-light">
+                <i class="fa-brands fa-instagram fa-lg  rounded-circle  p-2 me-2 mt-2 mb-2"></i>
+              </a>
+            </li>
+          </ul>
+      </div>
+      </div>
+      <div class="col-md-6 col-lg-2 mt-3"style="line-height: 40px;">
+        <div class="links">
+          <h5  style="color:#f77c02;">Links</h5>
+          <ul class="list-unstyled">
+            <li><a class="text-decoration-none text-secondary" href="home.html">Home</a></li>
+            <li><a class="text-decoration-none text-secondary" href="Products.html">Products</a></li>
+            <li><a class="text-decoration-none text-secondary" href="About.html">About</a></li>
+            <li><a class="text-decoration-none text-secondary" href="Add_product.html">Add product</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-2  mt-3 " style="line-height: 40px;">
+        <div class="links">
+          <h5  style="color:#f77c02;">About Us</h5>
+          <ul class="list-unstyled ">
+            <li><a class="text-decoration-none text-secondary" href="Login.html">Sign In</a></li>
+            <li><a class="text-decoration-none text-secondary" href="Login.html">Register</a></li>
+            <li><a class="text-decoration-none text-secondary" href="About.html">About Us</a></li>
+            <li><a class="text-decoration-none text-secondary" href="About.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mt-3" >
+        <div class="contact" >
+          <h5  style="color:#f77c02;">Contact Us</h5>
+          <p class="lh-lg mt-3 mb-5 text-secondary">Get in touch with us by mail or phone.We are waiting for your call or message</p>
+          <a class="btn rounded-pill main-btn fs-5 w-100 text-black" style="background-color: #f77c02;" href="#">Foodie@gmail.com</a>
+        </div>
+      </div>
+      <div class="copyright text-center  text-secondary" >
+        <div class="mt-5">&copy;2025 Foodie.All rights reserved.</div>
+      </div>
+      </div>
+      </div>
+</footer>
+<script src="Products_Script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="bootstrap.min.js"></script>
+<script src="shared.js"></script>
+  <script>
+    updateCartCount();
+     function goToCart() {
+      window.location.href = "Cart.html";
+    }
+  </script>
+</body>
+</html>
+
